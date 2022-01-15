@@ -48,7 +48,7 @@ Each file should have one sentence per line as follows (space delimited): \
 After, for training NaVa you need specify his Hyperparameter and then you could use his text features( latent representation) for clustetring general text. Check this [code](https://github.com/NaVaClustering/Experiments/blob/main/NaVA/NaVA_Example.ipynb) to see how MVAE-BM could be trained in a toy sample scenario.
 
 
-###  NaVa attention mechanism
+###  MBAE-BM attention mechanism
 
 
 In Figure 1  depicts a general idea for the recognition and generative models. A vector x representing a document passes through two attention layers in parallel, then each attention output pass through a deep neural network to obtain the latent representations c and h used by the mixture of Boltzmann machines.
