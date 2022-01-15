@@ -1,8 +1,7 @@
-#                          NaVA Clustering
-authors are removed for double blind review 
+#                          MVAE-BM
 ***
 
-In this repository we present NaVA(Neural attention Variational Autoencoder) a new framework for general text clustering. In this repository we compare our technique with various state-of-the-art baselines in NLP. All of our experiments were executed on Google Colab, a NaVA model could be trained within a few minutes on this platform, its implementation based on neural networks, is also suitable for parallelization via GPU/TPU.
+In this repository we present MVAE-BM (Mixture Variational Auto-Encoder of Boltzmann Machines) a new framework for general text clustering. In this repository we compare our technique with various state-of-the-art baselines in NLP. All of our experiments were executed on Google Colab, a NaVA model could be trained within a few minutes on this platform, its implementation based on neural networks, is also suitable for parallelization via GPU/TPU.
 
 ### Requirements
 1. Python>=3.5
@@ -27,7 +26,7 @@ In this repository we present NaVA(Neural attention Variational Autoencoder) a n
 |[Isis Tweets]()  | Movie and TV Review |15000| 6000| - | 
 
 \
-We propose a novel framework based on MVAE for general text clustering. NaVa(Neural attention Variational Autoencoder) is an unsupervised generative model of text which aims to extract a continuous semantic latent variable for each document. In this way, our model presents a new structure capable of increasing its latent representation using a deep architecture and attention mechanism.
+We propose a novel framework based on MVAE for general text clustering. MVAE-BM (Mixture Variational Auto-Encoder of Boltzmann Machines) is an unsupervised generative model of text which aims to extract a continuous semantic latent variable for each document. In this way, our model presents a new structure capable of increasing its latent representation using a deep architecture and attention mechanism.
 
 <p align="center">
 <img align="center" src="https://github.com/NaVaClustering/Experiments/blob/main/figs/a.png">
@@ -46,7 +45,7 @@ Each file should have one sentence per line as follows (space delimited): \
 `...`
 
 
-After, for training NaVa you need specify his Hyperparameter and then you could use his text features( latent representation) for clustetring general text. Check this [code](https://github.com/NaVaClustering/Experiments/blob/main/NaVA/NaVA_Example.ipynb) to see how NaVA could be trained in a toy sample scenario.
+After, for training NaVa you need specify his Hyperparameter and then you could use his text features( latent representation) for clustetring general text. Check this [code](https://github.com/NaVaClustering/Experiments/blob/main/NaVA/NaVA_Example.ipynb) to see how MVAE-BM could be trained in a toy sample scenario.
 
 
 ###  NaVa attention mechanism
@@ -93,8 +92,9 @@ In table 3, where we can see the comparison between NaVA and our deep text repre
 ### Reference
 
 Please make sure to cite the papers when its use for represents document for clustering.
+
 Please cite the following paper if you use this implementation:\
-`@InProceedings{Submitted to WSDM'22,`\
+`@InProceedings{Submitted to NAACL'22,`\
   `author    = {authors are removed for double blind review},`\
   `title     = {Neural attention Variational Autoencoder for Text Clustering},`\
   `booktitle = {NAACL'22},`\
